@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
-// @ts-ignore: module has no type declarations
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis"; // Updated here
 import CinematicHero from "@/components/CinematicHero";
 import HorizontalShowcase from "@/components/HorizontalShowcase";
 
@@ -10,8 +9,7 @@ export default function Home() {
     // Lenis Smooth Scroll Configuration
     const lenis = new Lenis({ 
       duration: 1.4, 
-      smoothWheel: true,
-      wheelMultiplier: 1.1 
+      smoothWheel: true
     });
     
     function raf(time: number) {
