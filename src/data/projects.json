@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cyberpunk-edit",
+    "title": "Neon Syndicate Showreel",
+    "category": "Video Editing",
+    "tags": ["Cinematic", "Color Grading", "Sound Design"],
+    "software": ["Premiere Pro", "DaVinci Resolve"],
+    "client": "Syndicate Media",
+    "year": "2026",
+    "description": "High-octane cyberpunk video pacing with custom asset overlays and visual heavy effects mapping.",
+    "thumbnail": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
+    "mediaType": "video",
+    "mediaUrl": "https://assets.mixkit.co/videos/preview/mixkit-cyberpunk-neon-city-street-40141-large.mp4"
+  },
+  {
+    "id": "minimal-ui",
+    "title": "Aether Spatial App Interface",
+    "category": "UI/UX Design",
+    "tags": ["Spatial", "Glassmorphism"],
+    "software": ["Figma", "Blender"],
+    "client": "Aether Corp",
+    "year": "2026",
+    "description": "An award-winning futuristic user interface exploring spatial menus and high-end aesthetics.",
+    "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
+    "mediaType": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1280&q=80"
+  },
+  {
+    "id": "branding-identity",
+    "title": "Krypton Core Branding",
+    "category": "Branding",
+    "tags": ["Logofolio", "Identity"],
+    "software": ["Illustrator", "Photoshop"],
+    "client": "Krypton Tech",
+    "year": "2025",
+    "description": "Complete corporate visual identity framework for a Web3 tech conglomerate.",
+    "thumbnail": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80",
+    "mediaType": "image",
+    "mediaUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1280&q=80"
+  }
+]
