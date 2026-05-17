@@ -35,9 +35,12 @@ export default function CinematicHero() {
           <span className="text-[#00f0ff] tracking-[0.4em] uppercase text-xs font-semibold mb-4 block [text-shadow:0_0_20px_rgba(0,240,255,0.4)]">
             CREATIVE DIRECTOR // DIGITAL ARCHITECT
           </span>
-          <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-6 text-white uppercase">
-            IMAGINATION <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] to-[#9d4edd]">RENDERED LIVE.</span>
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-6 text-white uppercase">
+  IMAGINATION RENDERED <br />
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] to-[#9d4edd]">
+    BY KRISHNA KANT
+  </span>
+</h1>
           <p className="text-zinc-400 text-sm md:text-lg max-w-2xl mx-auto font-light mb-8">
             Video Editing, Premium UI/UX, and Custom Interactive Code crafted for high-tier brands.
           </p>
