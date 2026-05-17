@@ -4,6 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Search } from "lucide-react";
 import projectsData from "@/data/projects.json";
 import ProjectCard from "./ProjectCard";
+import { Project } from "../types"; // Adjusted the import path to correctly locate the types file
+import { FC } from "react";
+
+interface ProjectCardProps {
+  project: Project;
+  onClick: () => void;
+}
 
 const CATEGORIES = ["All", "Video Editing", "Photo Editing", "UI/UX Design", "Graphic Design", "Posters", "Banners", "Branding", "Motion Graphics", "Web Design"];
 
@@ -27,13 +34,13 @@ export default function PortfolioGrid() {
         </div>
         <div className="relative w-full md:w-80">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-500" />
-          <input type="text" placeholder="Search archive..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full bg-[#121214] border border-white/10 rounded-full pl-11 pr-4 py-3 text-sm text-white focus:outline-none focus:border-[#00f0ff]" />
+          <input type="text" placeholder="Search archive..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full bg-[#140c11] border border-white/10 rounded-full pl-11 pr-4 py-3 text-sm text-white focus:outline-none focus:border-[#ff0055]" />
         </div>
       </div>
 
       <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-12 border-b border-white/5 no-scrollbar">
         {CATEGORIES.map((cat) => (
-          <button key={cat} onClick={() => setActiveCategory(cat)} className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider font-medium transition-all ${activeCategory === cat ? "bg-white text-black" : "bg-[#121214] text-zinc-400 hover:text-white"}`}>
+          <button key={cat} onClick={() => setActiveCategory(cat)} className={`px-4 py-2 rounded-full text-xs uppercase tracking-wider font-medium transition-all ${activeCategory === cat ? "bg-white text-black" : "bg-[#140c11] text-zinc-400 hover:text-white"}`}>
             {cat}
           </button>
         ))}
@@ -42,7 +49,7 @@ export default function PortfolioGrid() {
       <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project)} />
+            <ProjectCard key={project.id} project={project as Project} onClick={() => setSelectedProject(project)} />
           ))}
         </AnimatePresence>
       </motion.div>
@@ -50,7 +57,7 @@ export default function PortfolioGrid() {
       <AnimatePresence>
         {selectedProject && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl flex items-center justify-center p-4">
-            <div className="max-w-4xl w-full bg-[#121214] border border-white/10 rounded-2xl overflow-hidden relative">
+            <div className="max-w-4xl w-full bg-[#140c11] border border-white/10 rounded-2xl overflow-hidden relative">
               <button onClick={() => setSelectedProject(null)} className="absolute top-4 right-4 bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center border border-white/10">×</button>
               <div className="aspect-video w-full bg-black">
                 {selectedProject.mediaType === "video" ? (
@@ -60,7 +67,7 @@ export default function PortfolioGrid() {
                 )}
               </div>
               <div className="p-6 md:p-8">
-                <span className="text-[#00f0ff] text-xs font-mono uppercase block mb-1">{selectedProject.category}</span>
+                <span className="text-[#ff0055] text-xs font-mono uppercase block mb-1">{selectedProject.category}</span>
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-2">{selectedProject.title}</h3>
                 <p className="text-zinc-400 text-sm">{selectedProject.description}</p>
                 <div className="mt-4 flex gap-4 text-xs text-zinc-500 font-mono">
