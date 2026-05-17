@@ -4,13 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Search } from "lucide-react";
 import projectsData from "@/data/projects.json";
 import ProjectCard from "./ProjectCard";
-import { Project } from "../types"; // Adjusted the import path to correctly locate the types file
-import { FC } from "react";
-
-interface ProjectCardProps {
-  project: Project;
-  onClick: () => void;
-}
 
 const CATEGORIES = ["All", "Video Editing", "Photo Editing", "UI/UX Design", "Graphic Design", "Posters", "Banners", "Branding", "Motion Graphics", "Web Design"];
 
@@ -49,7 +42,7 @@ export default function PortfolioGrid() {
       <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <AnimatePresence mode="popLayout">
           {filteredProjects.map((project) => (
-            <ProjectCard key={project.id} project={project as Project} onClick={() => setSelectedProject(project)} />
+            <ProjectCard key={project.id} project={project} onClick={() => setSelectedProject(project)} />
           ))}
         </AnimatePresence>
       </motion.div>
