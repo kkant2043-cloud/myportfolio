@@ -37,5 +37,18 @@
     "thumbnail": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=600&q=80",
     "mediaType": "image",
     "mediaUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=1280&q=80"
+  },
+  {
+    "id": "cinematic-portrait",
+    "title": "My Premium Portrait Edit",
+    "category": "Photo Editing",
+    "tags": ["Color Grading", "Retouching"],
+    "software": ["Photoshop"],
+    "client": "Personal",
+    "year": "2026",
+    "description": "Bespoke look development and advanced texture tracking.",
+    "thumbnail": "/DSC0097.jpg",
+    "mediaType": "image",
+    "mediaUrl": "/DSC0097.jpg"
   }
 ]
