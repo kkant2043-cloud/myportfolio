@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import * as random from "maath/random";
 
 function ParticleSwarm() {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
   const sphere = random.inSphere(new Float32Array(3000), { radius: 1.5 });
   useFrame((state, delta) => {
     if (ref.current) {
@@ -16,7 +16,7 @@ function ParticleSwarm() {
   });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points ref={ref} positions={sphere} stride={3} frustumCulled={false}>
+      <Points ref={ref} positions={sphere as any} stride={3} frustumCulled={false}>
         <PointMaterial transparent color="#00f0ff" size={0.004} sizeAttenuation={true} depthWrite={false} />
       </Points>
     </group>
