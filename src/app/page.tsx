@@ -1,8 +1,9 @@
 "use client";
 import { useEffect } from "react";
 import Lenis from "lenis";
-import CinematicHero from "../components/CinematicHero";
-import PortfolioGrid from "../components/PortfolioGrid";
+import CinematicHero from "@/components/CinematicHero";
+import PortfolioGrid from "@/components/PortfolioGrid";
+import ResumeSection from "@/components/Resume";
 import { Mail, Phone } from "lucide-react";
 
 export default function Home() {
@@ -24,6 +25,7 @@ export default function Home() {
       {/* Sections */}
       <CinematicHero />
       <PortfolioGrid />
+      <ResumeSection />
 
       {/* Premium Contact Section */}
       <section id="contact" className="container mx-auto px-6 py-24 max-w-4xl text-center">

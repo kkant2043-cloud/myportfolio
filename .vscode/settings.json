@@ -1,0 +1,21 @@
+{
+    "cSpell.words": [
+        "aapke",
+        "BENTO",
+        "DSLR",
+        "Jamtara",
+        "jayega",
+        "Jharkhand",
+        "krishnakant",
+        "Lalani",
+        "Vlogging"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:cinematic-portfolio}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
+}
