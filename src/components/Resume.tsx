@@ -113,7 +113,7 @@ const ResumeSection = () => {
                 <li>Adobe Premiere Pro</li>
                 <li>Adobe After Effects</li>
                 <li>Cinematic Production</li>
-                <li>Audio Editing Software</li>
+                <li>DaVinci Resolve</li>
               </ul>
             </div>
 
@@ -122,10 +122,10 @@ const ResumeSection = () => {
                 <Code size={16} className="text-indigo-400" /> Core Expertise
               </div>
               <ul className="space-y-1.5 text-xs text-slate-400 list-disc list-inside">
+                <li>AI-Powered Video Workflows</li>
                 <li>Corporate Branding & Logos</li>
+                <li>High-End Photo Retouching</li>
                 <li>Advanced Color Correction</li>
-                <li>DSLR & Vector Mapping</li>
-                <li>Sound Synchronization</li>
               </ul>
             </div>
 
