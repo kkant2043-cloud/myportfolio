@@ -190,7 +190,7 @@ const ResumeSection = () => {
                 <div className="absolute w-2 h-2 bg-blue-500 rounded-full -left-[4.5px] top-1.5 shadow-[0_0_8px_rgba(59,130,246,0.5)]"></div>
                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
                   <h4 className="text-sm font-bold text-slate-200">Advanced Multimedia Course</h4>
-                  <span className="text-[10px] font-mono text-indigo-400">09/2024 – Present</span>
+                  <span className="text-[10px] font-mono text-indigo-400">09/2023 – 09/2024</span>
                 </div>
                 <p className="text-xs text-slate-400 mt-0.5">Lalani Computer Academy, Jamtara</p>
               </div>
